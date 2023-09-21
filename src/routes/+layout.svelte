@@ -6,7 +6,7 @@
   import '@svelteness/kit-docs/client/styles/vars.css';
 
   import { page } from '$app/stores';
-  import { base } from '$app/paths';
+
 
   import SALogo from '$img/letter-s.svg?raw';
 
@@ -45,7 +45,7 @@
     <div class="logo" slot="navbar-left">
       <Button style="display: inline-block; vertical-align: middle;" href="https://solutions.asia">
         {@html SALogo}
-      </Button>&nbsp;<a href="{base}/" class="text-soft text-base hover:font-medium font-base hover:underline hover:text-brand" style="display: inline-block;">TS-Webcrawler</a>
+      </Button>&nbsp;<a href="/" class="text-soft text-base hover:font-medium font-base hover:underline hover:text-brand" style="display: inline-block;">TS-Webcrawler</a>
     </div>
 
     <slot />

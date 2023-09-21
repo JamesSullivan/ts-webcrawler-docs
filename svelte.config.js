@@ -6,20 +6,20 @@ import {
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  extensions: ['.svelte', '.md'],
-  preprocess: vitePreprocess(),
+  // extensions: ['.svelte', '.md'],
+  process: vitePreprocess(),
 
   kit: {
     adapter: adapter(),
-        paths: {
-            base: process.env.NODE_ENV === 'production' ? '/ts-webcrawler-docs' : '',
-        }
+    // paths: {
+    //   base: process.env.NODE_ENV === 'production' ? '/ts-webcrawler-docs' : '',
+    // }
 
 
-    prerender: {
-      entries: ['*'],
-      handleMissingId: 'warn',
-    },
+    //   prerender: {
+    //     entries: ['*'],
+    //     handleMissingId: 'warn',
+    //   },
   },
 };
 
