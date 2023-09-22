@@ -7,13 +7,13 @@ import {
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   // extensions: ['.svelte', '.md'],
-  process: vitePreprocess(),
+  preprocess: vitePreprocess(),
 
   kit: {
     adapter: adapter(),
-    // paths: {
-    //   base: process.env.NODE_ENV === 'production' ? '/ts-webcrawler-docs' : '',
-    // }
+    paths: {
+      base: process.env.NODE_ENV === 'production' ? '/ts-webcrawler-docs' : '',
+    }
 
 
     //   prerender: {
