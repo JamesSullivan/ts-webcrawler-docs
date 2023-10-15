@@ -6,9 +6,8 @@
   import '@svelteness/kit-docs/client/styles/vars.css';
 
   import { page } from '$app/stores';
-
-
   import SALogo from '$img/letter-s.svg?raw';
+
 
   import { Button, KitDocs, KitDocsLayout, createSidebarContext } from '@svelteness/kit-docs';
 
@@ -52,6 +51,7 @@
   </KitDocsLayout>
 </KitDocs>
 
+  
 <style>
   :global(:root) {
     --kd-color-brand-rgb: 233, 127, 6;

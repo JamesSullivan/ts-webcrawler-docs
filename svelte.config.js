@@ -1,25 +1,16 @@
-import adapter from '@sveltejs/adapter-static';
-import {
-  vitePreprocess
-} from '@sveltejs/kit/vite';
-
+import adapter from '@sveltejs/adapter-auto';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  // extensions: ['.svelte', '.md'],
-  preprocess: vitePreprocess(),
+  extensions: ['.svelte', '.md'],
 
   kit: {
     adapter: adapter(),
-    paths: {
-      base: process.env.NODE_ENV === 'production' ? '/ts-webcrawler-docs' : '',
-    }
 
-
-    //   prerender: {
-    //     entries: ['*'],
-    //     handleMissingId: 'warn',
-    //   },
+    prerender: {
+      entries: ['*'],
+      handleMissingId: 'warn',
+    },
   },
 };
 
